@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB5D5CA52CA84BE000701E30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D5C782CA8495C00701E30 /* WidgetKit.framework */; };
+		CB5D5CA62CA84BE000701E30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5D5C7A2CA8495C00701E30 /* SwiftUI.framework */; };
+		CB5D5CAF2CA84BE100701E30 /* MealWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB5D5CA42CA84BE000701E30 /* MealWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC6CD982CA7D2A900BEBBC6 /* SchoolWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CBC6CD972CA7D2A900BEBBC6 /* SchoolWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB5D5CAD2CA84BE100701E30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC6CD8B2CA7D2A900BEBBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB5D5CA32CA84BE000701E30;
+			remoteInfo = MealWidgetExtension;
+		};
 		CBC6CD992CA7D2A900BEBBC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CBC6CD8B2CA7D2A900BEBBC6 /* Project object */;
@@ -21,6 +31,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CB5D5C8B2CA8495D00701E30 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB5D5CAF2CA84BE100701E30 /* MealWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6CDAA2CA7D2AA00BEBBC6 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,11 +56,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB5D5C782CA8495C00701E30 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CB5D5C7A2CA8495C00701E30 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CB5D5CA42CA84BE000701E30 /* MealWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MealWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6CD912CA7D2A900BEBBC6 /* SchoolWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC6CD972CA7D2A900BEBBC6 /* SchoolWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SchoolWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CB5D5CB02CA84BE100701E30 /* Exceptions for "MealWidget" folder in "MealWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CB5D5CA32CA84BE000701E30 /* MealWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CB5D5CA72CA84BE000701E30 /* MealWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CB5D5CB02CA84BE100701E30 /* Exceptions for "MealWidget" folder in "MealWidgetExtension" target */,
+			);
+			path = MealWidget;
+			sourceTree = "<group>";
+		};
 		CBC6CD9B2CA7D2A900BEBBC6 /* SchoolWatch Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SchoolWatch Watch App";
@@ -48,6 +90,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB5D5CA12CA84BE000701E30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB5D5CA62CA84BE000701E30 /* SwiftUI.framework in Frameworks */,
+				CB5D5CA52CA84BE000701E30 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6CD942CA7D2A900BEBBC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,10 +109,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB5D5C772CA8495C00701E30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D5C782CA8495C00701E30 /* WidgetKit.framework */,
+				CB5D5C7A2CA8495C00701E30 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBC6CD8A2CA7D2A900BEBBC6 = {
 			isa = PBXGroup;
 			children = (
 				CBC6CD9B2CA7D2A900BEBBC6 /* SchoolWatch Watch App */,
+				CB5D5CA72CA84BE000701E30 /* MealWidget */,
+				CB5D5C772CA8495C00701E30 /* Frameworks */,
 				CBC6CD922CA7D2A900BEBBC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +133,7 @@
 			children = (
 				CBC6CD912CA7D2A900BEBBC6 /* SchoolWatch.app */,
 				CBC6CD972CA7D2A900BEBBC6 /* SchoolWatch Watch App.app */,
+				CB5D5CA42CA84BE000701E30 /* MealWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +141,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB5D5CA32CA84BE000701E30 /* MealWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5D5CB12CA84BE100701E30 /* Build configuration list for PBXNativeTarget "MealWidgetExtension" */;
+			buildPhases = (
+				CB5D5CA02CA84BE000701E30 /* Sources */,
+				CB5D5CA12CA84BE000701E30 /* Frameworks */,
+				CB5D5CA22CA84BE000701E30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CB5D5CA72CA84BE000701E30 /* MealWidget */,
+			);
+			name = MealWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MealWidgetExtension;
+			productReference = CB5D5CA42CA84BE000701E30 /* MealWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CBC6CD902CA7D2A900BEBBC6 /* SchoolWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBC6CDAB2CA7D2AA00BEBBC6 /* Build configuration list for PBXNativeTarget "SchoolWatch" */;
@@ -104,10 +189,12 @@
 				CBC6CD932CA7D2A900BEBBC6 /* Sources */,
 				CBC6CD942CA7D2A900BEBBC6 /* Frameworks */,
 				CBC6CD952CA7D2A900BEBBC6 /* Resources */,
+				CB5D5C8B2CA8495D00701E30 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB5D5CAE2CA84BE100701E30 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CBC6CD9B2CA7D2A900BEBBC6 /* SchoolWatch Watch App */,
@@ -129,6 +216,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					CB5D5CA32CA84BE000701E30 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					CBC6CD902CA7D2A900BEBBC6 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -153,11 +243,19 @@
 			targets = (
 				CBC6CD902CA7D2A900BEBBC6 /* SchoolWatch */,
 				CBC6CD962CA7D2A900BEBBC6 /* SchoolWatch Watch App */,
+				CB5D5CA32CA84BE000701E30 /* MealWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB5D5CA22CA84BE000701E30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6CD8F2CA7D2A900BEBBC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +273,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB5D5CA02CA84BE000701E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC6CD932CA7D2A900BEBBC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +290,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB5D5CAE2CA84BE100701E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB5D5CA32CA84BE000701E30 /* MealWidgetExtension */;
+			targetProxy = CB5D5CAD2CA84BE100701E30 /* PBXContainerItemProxy */;
+		};
 		CBC6CD9A2CA7D2A900BEBBC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CBC6CD962CA7D2A900BEBBC6 /* SchoolWatch Watch App */;
@@ -193,6 +303,67 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CB5D5CB22CA84BE100701E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3V6F4PZ8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MealWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.injoon5.SchoolWatch.watchkitapp.meal-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		CB5D5CB32CA84BE100701E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q3V6F4PZ8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MealWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MealWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.injoon5.SchoolWatch.watchkitapp.meal-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		CBC6CDA52CA7D2AA00BEBBC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +573,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB5D5CB12CA84BE100701E30 /* Build configuration list for PBXNativeTarget "MealWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5D5CB22CA84BE100701E30 /* Debug */,
+				CB5D5CB32CA84BE100701E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBC6CD8E2CA7D2A900BEBBC6 /* Build configuration list for PBXProject "SchoolWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

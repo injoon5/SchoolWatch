@@ -15,6 +15,7 @@ struct ContentView: View {
             TodayView()
             TimetableView()
             MealView()
+            SettingsView()
         }
         .tabViewStyle(.verticalPage)
     }

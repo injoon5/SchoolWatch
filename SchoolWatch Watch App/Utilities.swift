@@ -17,7 +17,7 @@ public func getWeekdayNamesOfCurrentWeek() -> [String] {
     var weekdayNames: [String] = []
     
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "EEEE" // Full weekday name (e.g., "Monday")
+    dateFormatter.dateFormat = "MMM d (EEE)" // Full weekday name (e.g., "Monday")
     
     // Iterate over all days of the week
     for weekday in 1...7 { // 1 = Sunday, 7 = Saturday
@@ -30,7 +30,13 @@ public func getWeekdayNamesOfCurrentWeek() -> [String] {
     return weekdayNames
 }
 
-
+public func formattedDateForTitle() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM d (E)"
+    let formattedDate = dateFormatter.string(from: Date())
+    
+    return formattedDate
+}
 
 public func getTimeFromPeriod(periodString: String) -> String {
     let components = periodString.split(separator: "(")
